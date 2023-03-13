@@ -10,11 +10,12 @@
 | `ftp 10.129.42.253` | FTP to a remote server |
 | **tmux** |
 | `tmux` | Start tmux |
-| `ctrl+b ctrl+c` | tmux: new window |
-| `ctrl+b 1` | tmux: switch to window (`1`) |
-| `ctrl+%` | tmux: split pane vertically |
-| `ctrl+"` | tmux: split pane horizontally |
-| `ctrl+->` | tmux: switch to the right pane |
+| `ctrl+b` | tmux: default prefix |
+| `prefix c` | tmux: new window |
+| `prefix 1` | tmux: switch to window (`1`) |
+| `prefix shift+%` | tmux: split pane vertically |
+| `prefix shift+"` | tmux: split pane horizontally |
+| `prefix ->` | tmux: switch to the right pane |
 | **Vim** |
 | `vim file` | vim: open `file` with vim |
 | `esc+i` | vim: enter `insert` mode |
