@@ -65,3 +65,7 @@
 - [Windows_Privilege_Escalation](Windows_Privilege_Escalation.md)
 - [worpress](worpress.md)
 - [xss](xss.md)
+
+## other links
+https://github.com/zer0byte/htb-notes   
+https://github.com/R0B1NL1N/OSCP-note
