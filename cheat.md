@@ -18,4 +18,7 @@ gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u 
 gobuster --url [http://10.10.10.93](http://10.10.10.93/)/ dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 50
 
 gobuster --url [http://10.10.10.93/](http://10.10.10.93/) dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x aspx
+
+netstat -antp | grep -i list
+
 ```

