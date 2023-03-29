@@ -50,6 +50,5 @@ crackmapexec smb 10.129.42.197 -u "john" -p "november"
 crackmapexec smb 10.129.42.197 -u "cassie" -p "12345678910" --shares
 crackmapexec smb 10.129.42.197 -u "chris" -p "789456123" --shares
 crackmapexec smb 10.129.252.193 -u "cassie" -p "12345678910" --shares
-smbclient -U user \\\\10.129.252.193\\CASSIE
 smbclient -U cassie \\\\10.129.252.193\\CASSIE
 ```
